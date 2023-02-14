@@ -1,5 +1,4 @@
 import { FlatList, View, Text } from "react-native";
-
 import { ImageContainer } from "./imageContainer";
 import config from "../../config";
 import { useFetch } from "../hooks/useFetch";
@@ -15,7 +14,7 @@ export function ImagesContainer() {
     );
 
     return (
-        <FlatList 
+        <FlatList
             numColumns={2}
             data={data ? data.imagesIds : []}
             renderItem={({ item: imgId }) => <ImageContainer imgId={imgId} />}

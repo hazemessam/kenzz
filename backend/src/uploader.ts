@@ -1,4 +1,4 @@
-import multer, { Options as MulterOptions  } from 'multer';
+import multer, { Options as MulterOptions } from 'multer';
 import { MAX_IMAGE_SIZE } from './config';
 import APIError from './error';
 

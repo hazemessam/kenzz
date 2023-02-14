@@ -10,7 +10,7 @@ type ImageContainerProps = {
 export function ImageContainer({ imgId }: ImageContainerProps) {
     return (
         <View style={styles.imgContainer}>
-            <Image 
+            <Image
                 style={styles.img}
                 source={{ uri: `${config.API_BASE_URL}/api/images/${imgId}` }}
             />
@@ -20,17 +20,17 @@ export function ImageContainer({ imgId }: ImageContainerProps) {
 
 
 const styles = StyleSheet.create({
-	img: {
-		width: '90%',
-		height: 150,
-		borderRadius: 10,
-	},
-	imgContainer: {
-		shadowColor: 'black',
-    	shadowOffset: { width: 3, height: 3 },
-    	shadowOpacity: 0.5,
-		width: '50%',
-		marginVertical: 10,
-		alignItems: 'center',
-	}
+    img: {
+        width: '90%',
+        height: 150,
+        borderRadius: 10,
+    },
+    imgContainer: {
+        shadowColor: 'black',
+        shadowOffset: { width: 3, height: 3 },
+        shadowOpacity: 0.5,
+        width: '50%',
+        marginVertical: 10,
+        alignItems: 'center',
+    }
 });

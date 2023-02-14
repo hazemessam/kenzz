@@ -1,14 +1,13 @@
 import { Platform } from 'react-native';
 import { ImagePickerAsset, launchImageLibraryAsync, MediaTypeOptions } from "expo-image-picker";
-
 import config from '../../config';
 
 
 export async function grabImage() {
-    const imgPickerResult = await launchImageLibraryAsync({ 
-        mediaTypes: MediaTypeOptions.Images 
+    const imgPickerResult = await launchImageLibraryAsync({
+        mediaTypes: MediaTypeOptions.Images
     });
-    if (imgPickerResult.canceled) 
+    if (imgPickerResult.canceled)
         throw new Error("Picking an image was canceled");
 
     return imgPickerResult.assets[0];
@@ -37,10 +36,9 @@ export async function uploadImg(data: FormData) {
     };
     const res =  await fetch(`${config.API_BASE_URL}/api/images`, reqOpts);
     const resData = await res.json();
-    
-    if (res.status != 201) {
+
+    if (res.status != 201)
         throw new Error(`Failed to upload the image: ${resData.msg}`);
-    }
 
     return resData.imageId as string;
 }

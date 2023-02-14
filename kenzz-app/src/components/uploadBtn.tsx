@@ -1,6 +1,5 @@
 import { Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-
 import { grabImage, prepareImgforUploading, uploadImg } from "../services/upload";
 import { mainColor } from '../common/styles';
 
@@ -11,7 +10,6 @@ async function handleOnPress() {
         const imgData = prepareImgforUploading(img);
         const imgId = await uploadImg(imgData);
         console.log(imgId);
-        // TODO: Add the uploaded img id to the ImagesContainer state
     } catch (error) {
         console.log(error);
     }
@@ -36,7 +34,6 @@ const styles = StyleSheet.create({
         paddingVertical: 10,
         borderRadius: 10,
         margin: 10,
-        
     },
     text: {
         fontSize: 20,
