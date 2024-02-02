@@ -1,11 +1,11 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { mainColor } from '../common/styles';
 
 
 export function Header() {
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>Kenzz</Text>
+            <Text style={styles.header}>TrueImg</Text>
         </View>
     );
 }

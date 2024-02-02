@@ -6,7 +6,7 @@
 
 #### 2. Move to the project directory
 ```bash
-$ cd kenzz/kenzz-app
+$ cd true-img/frontend
 ```
 
 #### 3. Install the dependances

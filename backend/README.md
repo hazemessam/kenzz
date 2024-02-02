@@ -25,12 +25,12 @@ Here are the environment variables that you can configure along with their defau
 ## Server Setup
 #### 1. Clone the repo
 ```bash
-$ git clone https://github.com/hazemessam/kenzz.git
+$ git clone https://github.com/hazemessam/true-img.git
 ```
 
 #### 2. Move to the project directory
 ```bash
-$ cd kenzz/backend
+$ cd true-img/backend
 ```
 
 #### 3. Install the dependances
